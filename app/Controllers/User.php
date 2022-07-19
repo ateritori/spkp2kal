@@ -8,4 +8,9 @@ class User extends BaseController
     {
         return view('user/index');
     }
+
+    public function profil()
+    {
+        return view('user/profil');
+    }
 }
