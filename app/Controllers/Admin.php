@@ -8,4 +8,24 @@ class Admin extends BaseController
     {
         return view('admin/index');
     }
+
+    public function kriteria()
+    {
+        return view('admin/kriteria');
+    }
+
+    public function alternatif()
+    {
+        return view('admin/alternatif');
+    }
+
+    public function prom()
+    {
+        return view('admin/prom');
+    }
+
+    public function topsis()
+    {
+        return view('admin/topsis');
+    }
 }

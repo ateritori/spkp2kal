@@ -11,7 +11,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Starter Page</li>
+                    <li class="breadcrumb-item active">Input Penilaian</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -23,16 +23,14 @@
     <div class="container-fluid">
         <div class="row">
             <!-- /.col-md-6 -->
-            <div class="col-lg-6">
+            <div class="col-sm">
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-                        <h5 class="m-0">PAGE ADMIN</h5>
+                        <h5 class="m-0">Input Penilaian</h5>
                     </div>
                     <div class="card-body">
-                        <h6 class="card-title">Judul ADMIN</h6>
-
-                        <p class="card-text">ADMIN ADMIN ADMIN</p>
-                        <a href="#" class="btn btn-primary">Go ADMIN</a>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                        </p>
                     </div>
                 </div>
             </div>

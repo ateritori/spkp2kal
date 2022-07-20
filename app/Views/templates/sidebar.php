@@ -44,10 +44,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/user/profil" class="nav-link">
-                        <i class="nav-icon fas fa-table"></i>
+                    <a href="/user/input" class="nav-link">
+                        <i class="nav-icon fas fa-pen"></i>
                         <p>
-                            Data Usulan
+                            Input Penilaian
                         </p>
                     </a>
                 </li>
@@ -62,10 +62,34 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/admin" class="nav-link">
-                            <i class="nav-icon fas fa-ruler"></i>
+                        <a href="/admin/kriteria" class="nav-link">
+                            <i class="nav-icon fas fa-bars"></i>
                             <p>
-                                Data Kriteria
+                                Input Kriteria
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/alternatif" class="nav-link">
+                            <i class="nav-icon fas fa-file"></i>
+                            <p>
+                                Input Alternatif
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/prom" class="nav-link">
+                            <i class="nav-icon fas fa-chart-pie"></i>
+                            <p>
+                                Proses Promethee
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/topsis" class="nav-link">
+                            <i class="nav-icon fas fa-chart-bar"></i>
+                            <p>
+                                Proses Topsis
                             </p>
                         </a>
                     </li>

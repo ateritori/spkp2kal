@@ -13,4 +13,9 @@ class User extends BaseController
     {
         return view('user/profil');
     }
+
+    public function input_nilai()
+    {
+        return view('user/input_nilai');
+    }
 }
