@@ -8,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SPKP2Kal - <?= $title; ?></title>
+    <title><?= $title; ?></title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -77,23 +77,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="<?= base_url(); ?>/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
     <script>
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "lengthChange": false,
-                "autoWidth": false,
-                "buttons": ["excel", "pdf", "print"]
-            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example2').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "responsive": true,
-            });
-        });
+        $("#tabelUsers").DataTable({
+            "pageLength": 5,
+            "paging": true,
+            "responsive": true,
+            "lengthChange": false,
+            "autoWidth": true,
+            "ordering": true,
+            "info": true,
+            "buttons": ["excel", "pdf", "print"],
+        }).buttons().container().appendTo('#tabelUsers_wrapper .col-md-6:eq(0)');
     </script>
 
 </body>

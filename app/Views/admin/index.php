@@ -26,12 +26,12 @@
             <div class="col-sm">
                 <div class="card card-primary card-outline">
                     <div class="card-body">
-                        <table id="example1" class="table table-bordered table-striped">
+                        <table id="tabelUsers" class="table table-hover">
                             <thead class="table-dark">
                                 <td>UserID</td>
                                 <td>Email</td>
                                 <td>Username</td>
-                                <td>Role</td>
+                                <td>Status</td>
                                 <td>Role</td>
                                 <td>Update At</td>
                                 <td>Action</td>
@@ -41,11 +41,11 @@
                                 foreach ($users as $user) :
                                 ?>
                                     <tr>
-                                        <td><?= $user['id']; ?></td>
-                                        <td><?= $user['email']; ?></td>
-                                        <td><?= $user['username']; ?></td>
+                                        <td><?= $user->user_id; ?></td>
+                                        <td><?= $user->email; ?></td>
+                                        <td><?= $user->username; ?></td>
                                         <td><?php
-                                            $active = $user['active'];
+                                            $active = $user->active;
                                             if ($active == 1) :
                                                 $aktive = 'Aktif';
                                             else :
@@ -53,10 +53,10 @@
                                             endif;
                                             echo $aktive;
                                             ?></td>
-                                        <td><?= $user['name']; ?></td>
-                                        <td><?= $user['updated_at']; ?></td>
+                                        <td><?= $user->name; ?></td>
+                                        <td><?= $user->updated_at; ?></td>
                                         <td>
-                                            <a class="btn btn-info btn-sm" href="#">
+                                            <a class="btn btn-info btn-sm" href="<?= base_url('admin/' . $user->user_id); ?>">
                                                 <i class="fas fa-pencil-alt">
                                                 </i>
                                             </a>

@@ -7,19 +7,25 @@ use \App\Models\joinuserModel;
 class Admin extends BaseController
 {
 
+    protected $data, $model, $title;
     public function __construct()
     {
 
-        $model = new joinuserModel();
-        $data['users'] = $model->getUsers();
-        $data['title'] = 'Halaman Admin';
-        return view('admin/index', $data);
+        $this->model = new joinuserModel();
     }
 
     public function index()
     {
+        $data['title'] = 'Dashboar Admin';
+        $data['users'] = $this->model->getUsers()->getResult();
+        return view('admin/index', $data);
+    }
 
-        return view('admin/index');
+    public function updateUser()
+    {
+        $data['title'] = 'Update User';
+        $data['updateUser'] = $this->model->updateUser()->getResult();
+        return view('admin/update', $data);
     }
 
     public function kriteria()
