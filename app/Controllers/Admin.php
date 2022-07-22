@@ -2,10 +2,23 @@
 
 namespace App\Controllers;
 
+use \App\Models\joinuserModel;
+
 class Admin extends BaseController
 {
+
+    public function __construct()
+    {
+
+        $model = new joinuserModel();
+        $data['users'] = $model->getUsers();
+        $data['title'] = 'Halaman Admin';
+        return view('admin/index', $data);
+    }
+
     public function index()
     {
+
         return view('admin/index');
     }
 

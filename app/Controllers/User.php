@@ -4,6 +4,13 @@ namespace App\Controllers;
 
 class User extends BaseController
 {
+
+    public function __construct()
+    {
+        $data['title'] = 'Halaman User';
+        return view('user/index', $data);
+    }
+
     public function index()
     {
         return view('user/index');
