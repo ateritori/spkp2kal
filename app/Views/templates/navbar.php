@@ -5,31 +5,8 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="/user" class="nav-link">Home</a>
+            <a class="nav-link">Sistem Pendukung Keputusan Penentuan Prioritas Pembangunan Tahunan - Kalurahan Wonosari</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="/user/profil" class="nav-link">Profil</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="/user/input" class="nav-link">Input</a>
-        </li>
-        <?php if (in_groups('admin')) : ?>
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="/admin" class="nav-link">User</a>
-            </li>
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="/admin/kriteria" class="nav-link">Kriteria</a>
-            </li>
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="/admin/alternatif" class="nav-link">Alternatif</a>
-            </li>
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="/admin/prom" class="nav-link">Promethee</a>
-            </li>
-            <li class="nav-item d-none d-sm-inline-block">
-                <a href="/admin/topsis" class="nav-link">Topsis</a>
-            </li>
-        <?php endif; ?>
     </ul>
 
     <!-- Right navbar links -->
