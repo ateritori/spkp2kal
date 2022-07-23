@@ -7,7 +7,6 @@ use \App\Models\joinuserModel;
 class Admin extends BaseController
 {
 
-    protected $data, $model, $title;
     public function __construct()
     {
 
@@ -21,10 +20,10 @@ class Admin extends BaseController
         return view('admin/index', $data);
     }
 
-    public function updateUser()
+    public function editUser($user_id)
     {
         $data['title'] = 'Update User';
-        $data['updateUser'] = $this->model->updateUser()->getResult();
+        $data['updateUser'] = $this->model->editUser($user_id)->getResult();
         return view('admin/update', $data);
     }
 
