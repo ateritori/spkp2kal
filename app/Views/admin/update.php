@@ -28,7 +28,7 @@
                     <div class="card-body">
                         <!-- general form elements -->
                         <?php foreach ($updateUser as $update) : ?>
-                            <form method="POST" action="/admin/update" .<?= $update->user_id ?>>
+                            <form method="POST" action="/admin/update/<?= $update->user_id ?>">
                                 <div class="container">
                                     <div class="row mb-2">
                                         <div class="col-1">
@@ -38,7 +38,7 @@
                                             :
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" id="user_id" value="<?= $update->user_id; ?>" readonly>
+                                            <input type="text" class="form-control" name="user_id" value="<?= $update->user_id; ?>" readonly>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
@@ -49,7 +49,7 @@
                                             :
                                         </div>
                                         <div class="col">
-                                            <input type="email" class="form-control" id="user_id" value="<?= $update->email; ?>">
+                                            <input type="email" class="form-control" name="email" value="<?= $update->email; ?>">
                                         </div>
                                     </div>
                                     <div class="row mb-2">
@@ -60,7 +60,7 @@
                                             :
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" id="user_id" value="<?= $update->username; ?>">
+                                            <input type="text" class="form-control" name="username" value="<?= $update->username; ?>">
                                         </div>
                                     </div>
                                     <div class="row mb-2">
@@ -76,13 +76,13 @@
                                                 $status = $update->active;
                                                 if ($status == 1) :
                                                 ?>
-                                                    <input type="radio" name="status" checked> Aktif
-                                                    <input type="radio" name="status"> Tidak Aktif
+                                                    <input type="radio" name="status" checked value="1"> Aktif
+                                                    <input type="radio" name="status" value="0"> Tidak Aktif
                                                 <?php
                                                 else :
                                                 ?>
-                                                    <input type="radio" name="status"> Aktif
-                                                    <input type="radio" name="status" checked> Tidak Aktif
+                                                    <input type="radio" name="status" value="1"> Aktif
+                                                    <input type="radio" name="status" checked value="0"> Tidak Aktif
                                                 <?php
                                                 endif;
                                                 ?>
@@ -102,13 +102,13 @@
                                                 $role = $update->group_id;
                                                 if ($role == 1) :
                                                 ?>
-                                                    <input type="radio" name="role" checked> Admin
-                                                    <input type="radio" name="role"> User
+                                                    <input type="radio" name="role" value="1" checked> Admin
+                                                    <input type="radio" name="role" value="2"> User
                                                 <?php
                                                 else :
                                                 ?>
-                                                    <input type="radio" name="role"> Admin
-                                                    <input type="radio" name="role" checked> User
+                                                    <input type="radio" name="role" value="1"> Admin
+                                                    <input type="radio" name="role" checked value="2"> User
                                                 <?php
                                                 endif;
                                                 ?>
@@ -122,8 +122,11 @@
                                         <div class="col-0">
 
                                         </div>
-                                        <div class="col-2">
-                                            <button type="submit" class="btn btn-primary btn-block">Ubah</button>
+                                        <div class="col-1">
+                                            <button type="submit" class="btn btn-info btn-block">Ubah</button>
+                                        </div>
+                                        <div class="col-1">
+                                            <a class="btn btn-secondary btn-block" href="/admin/">Batal</a>
                                         </div>
                                     </div>
                                 </div>

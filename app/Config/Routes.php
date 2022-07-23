@@ -48,7 +48,9 @@ $routes->get('/admin/kriteria', 'Admin::kriteria', ['filter' => 'role:admin']);
 $routes->get('/admin/alternatif', 'Admin::alternatif', ['filter' => 'role:admin']);
 $routes->get('/admin/prom', 'Admin::prom', ['filter' => 'role:admin']);
 $routes->get('/admin/topsis', 'Admin::topsis', ['filter' => 'role:admin']);
-$routes->get('/admin/(:num)',  'Admin::editUser/$1', ['filter' => 'role:admin']);
+$routes->post('/admin/edit/(:num)',  'Admin::editUser/$1', ['filter' => 'role:admin']);
+$routes->post('/admin/update/(:num)',  'Admin::updateUser/$1', ['filter' => 'role:admin']);
+$routes->post('/admin/delete/(:num)',  'Admin::deleteUser/$1', ['filter' => 'role:admin']);
 
 /*
  * --------------------------------------------------------------------

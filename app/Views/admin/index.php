@@ -37,9 +37,7 @@
                                 <td>Action</td>
                             </thead>
                             <tbody>
-                                <?php
-                                foreach ($users as $user) :
-                                ?>
+                                <?php foreach ($users as $user) : ?>
                                     <tr>
                                         <td><?= $user->user_id; ?></td>
                                         <td><?= $user->email; ?></td>
@@ -56,14 +54,21 @@
                                         <td><?= $user->name; ?></td>
                                         <td><?= $user->updated_at; ?></td>
                                         <td>
-                                            <a class="btn btn-info btn-sm" href="<?= base_url('admin/' . $user->user_id); ?>">
-                                                <i class="fas fa-pencil-alt">
-                                                </i>
-                                            </a>
-                                            <a class="btn btn-danger btn-sm" href="#">
-                                                <i class="fas fa-trash">
-                                                </i>
-                                            </a>
+                                            <form method="POST" action="/admin/edit/<?= $user->user_id ?>" class="d-inline">
+                                                <?= csrf_field(); ?>
+                                                <button type="submit" class="btn btn-primary btn-sm">
+                                                    <i class="fas fa-pencil-alt">
+                                                    </i>
+                                                </button>
+                                            </form>
+                                            <form method="POST" action="/admin/delete/<?= $user->user_id ?>" class="d-inline">
+                                                <?= csrf_field(); ?>
+                                                <input type="hidden" name="user_id" value="<?= $user->user_id ?>">
+                                                <button type="submit" class="btn btn-danger btn-sm">
+                                                    <i class="fas fa-trash">
+                                                    </i>
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

@@ -28,7 +28,7 @@
                     <div class="inner">
                         <h3>4</h3>
 
-                        <p>Usulan Bidang 1 - Penyelenggaraan Pemerintahan</p>
+                        <p>JUMLAH JENIS SPK</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
@@ -43,7 +43,7 @@
                     <div class="inner">
                         <h3>3</h3>
 
-                        <p>Usulan Bidang 2 - Pembangunan</p>
+                        <p>JUMLAH USULAN</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
@@ -58,7 +58,7 @@
                     <div class="inner">
                         <h3>2</h3>
 
-                        <p>Usulan Bidang 3 - Pembinaan Kemasyarakatan</p>
+                        <p>JUMLAH ADMIN</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
@@ -73,7 +73,7 @@
                     <div class="inner">
                         <h3>5</h3>
 
-                        <p>Usulan Bidang 4 - Pemberdayaan Masyarakat</p>
+                        <p>JUMLAH USER</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
@@ -82,36 +82,6 @@
                 </div>
             </div>
             <!-- ./col -->
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-primary">
-                    <div class="inner">
-                        <h3>4</h3>
-
-                        <p>Usulan Bidang 5 - Penanggulangan Bencana</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-bag"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">Selengkapnya<i class="fas fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-dark">
-                    <div class="inner">
-                        <h3>4</h3>
-
-                        <p>Total Usulan</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-bag"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">Selengkapnya<i class="fas fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
         </div>
         <!-- /.row -->
     </div><!-- /.container-fluid -->
